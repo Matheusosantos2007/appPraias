@@ -15,28 +15,28 @@ id: 1,
 nome: 'Bertioga',
 local: 'São Paulo',
 // Caminho relativo da pasta app/(tabs)/ para assets/images/
-imagem: require('../../assets/images/bertioga.jpg'),
+imagem: require('../../assets/images/Bertioga.jpg'),
 link: '/bertioga', // Para usar na navegação depois
 },
 {
 id: 2,
 nome: 'Maragogi',
 local: 'Nordeste',
-imagem: require('../../assets/images/maragogi.jpg'),
+imagem: require('../../assets/images/Maragogi.jpg'),
 link: '/maragogi',
 },
 {
 id: 3,
 nome: 'Arraial do Cabo',
 local: 'Rio de Janeiro',
-imagem: require('../../assets/images/arraial.jpg'),
+imagem: require('../../assets/images/Arraial.jpg'),
 link: '/arraial',
 },
 {
 id: 4,
 nome: 'San Blas',
 local: 'Internacional',
-imagem: require('../../assets/images/sanblas.jpg'),
+imagem: require('../../assets/images/San Blas.jpg'),
 link: '/sanblas',
 },
 ];
