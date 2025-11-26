@@ -7,38 +7,35 @@ Image,
 ScrollView
 } from 'react-native';
 import { Stack } from 'expo-router';
-export default function BertiogaScreen() {
+export default function MaragogiScreen() {
 return (
 <ScrollView style={styles.container}>
-{/* 1. Header com o Título "Bertioga"
+{/* 1. Header com o Título "Maragogi"
 Isso garante que o nome da praia apareça na barra de navegação.
 */}
 <Stack.Screen
 options={{
-title: 'Bertioga',
+title: 'Maragogi',
 }}
 />
 {/* 2. Imagem Principal */}
 <Image
 // O caminho da pasta `app/` para `assets/` é apenas um nível (../)
-source={require('../assets/images/Bertioga.jpg')}
+source={require('../assets/images/Maragogi.jpg')}
 style={styles.headerImage}
 />
 {/* 3. Conteúdo da Página */}
 <View style={styles.contentContainer}>
 {/* Título e Subtítulo */}
-<Text style={styles.title}>Bertioga</Text>
+<Text style={styles.title}>Maragogi</Text>
 <Text style={styles.subtitle}>São Paulo</Text>
 {/* Texto de Descrição */}
 <Text style={styles.description}>
-Bertioga é um município do estado de São Paulo, no litoral da Baixada Santista,
-conhecido por suas belezas naturais, praias e área de Mata Atlântica.
-Funciona como a "porta de entrada" para o Litoral Norte do estado e atrai
-turistas que buscam lazer, aventura e contato com a natureza.
+Maragogi é uma cidade turística na costa do Oceano Atlântico, no leste do Brasil. É conhecida pelas suas longas praias como Burgalhau, perto do Rio dos Paus. Os recifes de coral ao largo da costa e os bancos de areia criaram uma lagoa pouco profunda, que serve de piscina natural. A sul de Maragogi encontra-se São Bento, uma aldeia piscatória com uma praia repleta de palmeiras. Aqui, a costa faz parte da área protegida da Costa dos Corais, que é rica em flora e fauna.
 </Text>
 {/* Imagem do Mapa */}
 <Image
-source={require('../assets/images/bertioga-map.png')}
+source={require('../assets/maragogi-map.png')}
 style={styles.mapImage}
 />
 

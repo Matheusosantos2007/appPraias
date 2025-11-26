@@ -7,38 +7,35 @@ Image,
 ScrollView
 } from 'react-native';
 import { Stack } from 'expo-router';
-export default function BertiogaScreen() {
+export default function Screen() {
 return (
 <ScrollView style={styles.container}>
-{/* 1. Header com o Título "Bertioga"
+{/* 1. Header com o Título "San Blas"
 Isso garante que o nome da praia apareça na barra de navegação.
 */}
 <Stack.Screen
 options={{
-title: 'Bertioga',
+title: 'San Blas',
 }}
 />
 {/* 2. Imagem Principal */}
 <Image
 // O caminho da pasta `app/` para `assets/` é apenas um nível (../)
-source={require('../assets/images/Bertioga.jpg')}
+source={require('../assets/images/San Blas.jpg')}
 style={styles.headerImage}
 />
 {/* 3. Conteúdo da Página */}
 <View style={styles.contentContainer}>
 {/* Título e Subtítulo */}
-<Text style={styles.title}>Bertioga</Text>
-<Text style={styles.subtitle}>São Paulo</Text>
+<Text style={styles.title}></Text>
+<Text style={styles.subtitle}></Text>
 {/* Texto de Descrição */}
 <Text style={styles.description}>
-Bertioga é um município do estado de São Paulo, no litoral da Baixada Santista,
-conhecido por suas belezas naturais, praias e área de Mata Atlântica.
-Funciona como a "porta de entrada" para o Litoral Norte do estado e atrai
-turistas que buscam lazer, aventura e contato com a natureza.
+O Arquipélago de San Blas é um conjunto de 365 ilhas pertencentes ao Panamá situadas frente a costa norte do Istmo, ao leste do Canal do Panamá. É o lar dos índios Kuna, que formam parte da comarca Kuna Yala ao longo da costa caribenha do Panamá.
 </Text>
 {/* Imagem do Mapa */}
 <Image
-source={require('../assets/images/bertioga-map.png')}
+source={require('../assets/sanblas-map.png')}
 style={styles.mapImage}
 />
 

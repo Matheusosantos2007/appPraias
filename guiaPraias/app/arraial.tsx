@@ -7,38 +7,35 @@ Image,
 ScrollView
 } from 'react-native';
 import { Stack } from 'expo-router';
-export default function BertiogaScreen() {
+export default function ArraialScreen() {
 return (
 <ScrollView style={styles.container}>
-{/* 1. Header com o Título "Bertioga"
+{/* 1. Header com o Título "Arraial"
 Isso garante que o nome da praia apareça na barra de navegação.
 */}
 <Stack.Screen
 options={{
-title: 'Bertioga',
+title: 'Maragogi',
 }}
 />
 {/* 2. Imagem Principal */}
 <Image
 // O caminho da pasta `app/` para `assets/` é apenas um nível (../)
-source={require('../assets/images/Bertioga.jpg')}
+source={require('../assets/images/Arraial.jpg')}
 style={styles.headerImage}
 />
 {/* 3. Conteúdo da Página */}
 <View style={styles.contentContainer}>
 {/* Título e Subtítulo */}
-<Text style={styles.title}>Bertioga</Text>
-<Text style={styles.subtitle}>São Paulo</Text>
+<Text style={styles.title}>Arraial</Text>
+<Text style={styles.subtitle}>Rio de Janeiro</Text>
 {/* Texto de Descrição */}
 <Text style={styles.description}>
-Bertioga é um município do estado de São Paulo, no litoral da Baixada Santista,
-conhecido por suas belezas naturais, praias e área de Mata Atlântica.
-Funciona como a "porta de entrada" para o Litoral Norte do estado e atrai
-turistas que buscam lazer, aventura e contato com a natureza.
+Arraial do Cabo, carinhosamente apelidada de "Caribe brasileiro", é um município na Região dos Lagos do Rio de Janeiro, famoso por suas praias de águas azul-turquesa e areias brancas e finas. É um destino popular para turistas em busca de belezas naturais e atividades como mergulho e passeios de barco.
 </Text>
 {/* Imagem do Mapa */}
 <Image
-source={require('../assets/images/bertioga-map.png')}
+source={require('../assets/arraial-map.png')}
 style={styles.mapImage}
 />
 
