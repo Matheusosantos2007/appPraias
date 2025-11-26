@@ -107,3 +107,4 @@ backgroundColor: '#3D4A9B',
 btnInter: {
 backgroundColor: '#6EB1E1',
 },
+});
